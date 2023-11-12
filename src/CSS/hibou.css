@@ -2,6 +2,9 @@
   position: relative;
   height: 170px;
   width: 192.1px;
+  min-width: 192.1px
+;
+  align-self: center;
 }
 
 .aigrette{
@@ -108,14 +111,14 @@
   width: 40%;
   background: #161616;
   border-radius: 50%;
-  animation: look-around 4s infinite;
 }
 
+
 .oeil--gauche .oeil-pupille {
-  right: 30%;
+  right: 20%;
 }
 .oeil--droite .oeil-pupille {
-  left: 30%;
+  left: 20%;
 }
 .oeil-pupille::after {
   content: "";
