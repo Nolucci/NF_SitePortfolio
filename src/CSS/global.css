@@ -11,6 +11,17 @@ body{
     display: flex;
     justify-content: center;
 }
+@media (max-width: 768px){
+    .hibou {
+        display: none;
+    }
+    .bulles{
+        display: block;
+    }
+    .b1, .b4, .b5, .b8{
+        margin-left: 0 !important;
+    }
+}
 
 h2 {
     font-family: sans-serif;
@@ -49,7 +60,7 @@ h2 {
 }
 
 .b1 {
-    background: url("");
+    background: url("https://raw.githubusercontent.com/Nolucci/NF_SitePortfolio/master/ressources/img/NFImgTete.png");
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +74,7 @@ h2 {
 }
 
 .b2 {
-    background: url("");
+    background: url("https://raw.githubusercontent.com/Nolucci/NF_SitePortfolio/master/ressources/img/mortarboard.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +100,7 @@ h2 {
 }
 
 .b4 {
-    background: url("");
+    background: url("https://raw.githubusercontent.com/Nolucci/NF_SitePortfolio/master/ressources/img/parcours.png");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,7 +232,7 @@ h2 {
 
 .bioContainer{
     text-decoration: none;
-    color: rgba(0, 186, 179, 0.8);
+    color: rgb(22, 22, 22);
     font-weight: bold;
     background-color: #f0f0f0;
     padding: 10px 20px;
