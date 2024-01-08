@@ -232,7 +232,7 @@ body{
     background-color: rgba(224, 42, 42, 0.8);
     align-self: center;
     margin-top: 0 !important;
-    background-image: none;
+    background-image: url("https://raw.githubusercontent.com/Nolucci/NF_SitePortfolio/master/ressources/img/home.png");
 }
 
 #bulle2CV{
@@ -240,6 +240,7 @@ body{
     background-color: rgba(136, 224, 42, 0.8);
     align-self: center;
     margin-top: 0 !important;
+    background-image: url("https://raw.githubusercontent.com/Nolucci/NF_SitePortfolio/master/ressources/img/fleche.png");
 }
 
 #allCVContainer{
@@ -348,6 +349,7 @@ body{
 
 .imageProjet{
     width:10em;
+    height: 8em;
     border-radius: 15px;
 }
 
@@ -355,5 +357,11 @@ body{
     color: white;
     width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+.pc2{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
