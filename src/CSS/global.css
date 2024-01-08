@@ -1,3 +1,49 @@
+@font-face{
+    font-family: 'font';
+    src: url('../../ressources/font/font.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'alagard';
+    src: url('../../ressources/font/alagard.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.reseaux{
+    display: flex;
+    position: absolute;
+    align-self: last baseline;
+    margin-bottom: -3%;
+}
+.tc1, .tc2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width : 70px !important;
+    margin: 5px;
+}
+
+h1{
+    font-family: font, sans-serif;
+}
+h2{
+
+}
+h2,h3,p,a{
+    font-family: 'alagard', sans-se, serif;
+    font-size: 1.2em;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+.soustitre>h2{
+    font-size: 2em !important;
+}
+
 html {
     height: 100%;
     display: flex;
@@ -10,6 +56,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 @media (max-width: 768px){
     .hibou {
@@ -18,14 +65,21 @@ body{
     .bulles{
         display: block;
     }
-    .b1, .b4, .b5, .b8{
+    .b1, .b4, .b5, .b8, .b2,.b3,.b6,.b7{
         margin-left: 0 !important;
+        margin-bottom: 0 !important;
+        margin-top: 40% !important;
     }
-}
+    .b2, .b4{
+        margin-top: 0 !important;
+    }
 
-h2 {
-    font-family: sans-serif;
-    font-size: 1.2rem;
+    .titreAccueil{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
 }
 
 .bulles {
@@ -42,18 +96,19 @@ h2 {
     clip-path: circle(40%);
     cursor: pointer;
     display: flex;
-    height: 200px;
+    height: 220px;
     justify-content: center;
-    width: 200px;
+    width: 220px;
 }
 .bulle .bulle-title {
     transition: 0.3s ease-out all;
     color: #fff;
     opacity: 1;
     text-align: center;
+    text-decoration: none;
 }
 .bulle:hover {
-    clip-path: circle(50%);
+    clip-path: circle(45%);
 }
 .bulle:hover .bulle-title {
     opacity: 0;
@@ -66,7 +121,7 @@ h2 {
     background-size: cover;
     background-color: rgba(60, 17, 82, 0.8);
     background-blend-mode: soft-light;
-    margin-left: 50%;
+    margin-bottom : 50%;
 }
 .b1:hover {
     transition: 0.3s ease-out all;
@@ -80,6 +135,7 @@ h2 {
     background-size: cover;
     background-color: rgba(213, 22, 104, 0.8);
     background-blend-mode: soft-light;
+    margin-top : 50%;
 }
 .b2:hover {
     transition: 0.3s ease-out all;
@@ -93,6 +149,8 @@ h2 {
     background-size: cover;
     background-color: rgba(0, 186, 179, 0.8);
     background-blend-mode: soft-light;
+    margin-bottom : 50%;
+
 }
 .b3:hover {
     transition: 0.3s ease-out all;
@@ -106,7 +164,7 @@ h2 {
     background-size: cover;
     background-color: rgba(224, 88, 42, 0.8);
     background-blend-mode: soft-light;
-    margin-left: 50%;
+    margin-top : 50%;
 }
 .b4:hover {
     transition: 0.3s ease-out all;
@@ -173,13 +231,15 @@ h2 {
     margin-right: 10px;
     background-color: rgba(224, 42, 42, 0.8);
     align-self: center;
-    background-image: url("https://raw.githubusercontent.com/Nolucci/NF_SitePortfolio/master/ressources/img/accueil.png");
+    margin-top: 0 !important;
+    background-image: none;
 }
 
 #bulle2CV{
     margin-left: 10px;
     background-color: rgba(136, 224, 42, 0.8);
     align-self: center;
+    margin-top: 0 !important;
 }
 
 #allCVContainer{
@@ -231,19 +291,69 @@ h2 {
 
 /* moi */
 
-.bioContainer{
+.bioPPContainer{
+    margin-top: -7%;
     text-decoration: none;
-    color: rgb(22, 22, 22);
+    color: rgb(238, 238, 238);
     font-weight: bold;
-    background-color: #f0f0f0;
+    background-color: #161616;
     padding: 10px 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #161616;
     border-radius: 5px;
     height: fit-content;
     margin-bottom: 7px;
     align-self: center;
 }
 
-/* monPortfolio */
+.titre{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titreAccueil{
+    position: absolute;
+    color: rgb(189, 167, 128);
+    font-weight: bold;
+    padding: 10px 20px;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
 
-.projetContainer
+}
+
+
+.projetsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em ;
+    justify-content: center;
+}
+
+.projetContainer{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.imagesProjet{
+    border-radius: 10px;
+    margin: 10%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.imageProjet{
+    width:10em;
+    border-radius: 15px;
+}
+
+.presentationProjet{
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
